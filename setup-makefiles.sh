@@ -22,8 +22,11 @@ MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \\
-	$OUTDIR/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \\
-	$OUTDIR/proprietary/lib/libmmjpeg.so:obj/lib/libmmjpeg.so
+    $OUTDIR/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \\
+    $OUTDIR/proprietary/lib/libmmjpeg.so:obj/lib/libmmjpeg.so \\
+    $OUTDIR/proprietary/lib/libqmi_cci.so:obj/lib/libqmi_cci.so \\
+    $OUTDIR/proprietary/lib/libqmi_common_so.so:obj/lib/libqmi_common_so.so \\
+    $OUTDIR/proprietary/lib/libqmi_csi.so:obj/lib/libqmi_csi.so
 
 PRODUCT_COPY_FILES += \\
 EOF
